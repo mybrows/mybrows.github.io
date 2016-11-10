@@ -95,7 +95,7 @@ hr.small {
 }
 
 .sidebar-nav {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 250px;
     margin: 0;
@@ -141,7 +141,7 @@ hr.small {
 }
 
 #menu-toggle {
-    z-index: 1;
+    z-index: 1000;
     position: fixed;
     top: 0;
     right: 0;
@@ -163,6 +163,9 @@ hr.small {
 
 /* Header */
 
+.logo{
+    width:80%;
+}
 .header {
     display: table;
     position: relative;
@@ -173,6 +176,43 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-position: 80%;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width:40%;
+  }
+  header .h2top {
+    font-size: 40px;
+  }
+  .header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/banner1.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: 30%;
+}
+ /* header .h2top .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .h2top .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;*/
+  }
 }
 
 /* About */
@@ -262,6 +302,7 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+  z-index:1000;
 }
 
 
