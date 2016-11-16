@@ -93,6 +93,17 @@ hr.small {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #sidebar-wrapper {
+      right: -250px;
+    }
+    #sidebar-wrapper.active {
+    left: 0px;
+  }
+}*/
 
 .sidebar-nav {
     position: relative;
@@ -185,6 +196,7 @@ hr.small {
   }
   header .h2top {
     font-size: 40px;
+    text-shadow: 2px 2px 2px #aaa;
   }
   .header {
     display: table;
@@ -496,38 +508,20 @@ h2 #highland {
     color:white;
 }
 
+/*.portfolio-modal .modal-content .pricesimg {
+  margin-bottom: 30px;
+  width:200px;
+}
 
+@media (max-width: 768px) {
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 768px) {
+  .portfolio-modal .modal-content .pricesimg {
+  margin-bottom: 30px;
+  width:100%;
+}
+}*/
 
 
